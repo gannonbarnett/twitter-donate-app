@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16FC3A812033904A00992FB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A802033904A00992FB3 /* AppDelegate.swift */; };
+		16FC3A832033904A00992FB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A822033904A00992FB3 /* ViewController.swift */; };
+		16FC3A862033904A00992FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC3A842033904A00992FB3 /* Main.storyboard */; };
+		16FC3A892033904A00992FB3 /* TwonateApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A872033904A00992FB3 /* TwonateApplication.xcdatamodeld */; };
+		16FC3A8B2033904A00992FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FC3A8A2033904A00992FB3 /* Assets.xcassets */; };
+		16FC3A8E2033904A00992FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC3A8C2033904A00992FB3 /* LaunchScreen.storyboard */; };
+		16FC3A992033904A00992FB3 /* TwonateApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A982033904A00992FB3 /* TwonateApplicationTests.swift */; };
+		16FC3AA42033904A00992FB3 /* TwonateApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3AA32033904A00992FB3 /* TwonateApplicationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16FC3A952033904A00992FB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16FC3A752033904A00992FB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16FC3A7C2033904A00992FB3;
+			remoteInfo = TwonateApplication;
+		};
+		16FC3AA02033904A00992FB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16FC3A752033904A00992FB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16FC3A7C2033904A00992FB3;
+			remoteInfo = TwonateApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16FC3A7D2033904A00992FB3 /* TwonateApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwonateApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FC3A802033904A00992FB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16FC3A822033904A00992FB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16FC3A852033904A00992FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16FC3A882033904A00992FB3 /* TwonateApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwonateApplication.xcdatamodel; sourceTree = "<group>"; };
+		16FC3A8A2033904A00992FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16FC3A8D2033904A00992FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16FC3A8F2033904A00992FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16FC3A942033904A00992FB3 /* TwonateApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwonateApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FC3A982033904A00992FB3 /* TwonateApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwonateApplicationTests.swift; sourceTree = "<group>"; };
+		16FC3A9A2033904A00992FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16FC3A9F2033904A00992FB3 /* TwonateApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwonateApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FC3AA32033904A00992FB3 /* TwonateApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwonateApplicationUITests.swift; sourceTree = "<group>"; };
+		16FC3AA52033904A00992FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16FC3A7A2033904A00992FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FC3A912033904A00992FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FC3A9C2033904A00992FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16FC3A742033904A00992FB3 = {
+			isa = PBXGroup;
+			children = (
+				16FC3A7F2033904A00992FB3 /* TwonateApplication */,
+				16FC3A972033904A00992FB3 /* TwonateApplicationTests */,
+				16FC3AA22033904A00992FB3 /* TwonateApplicationUITests */,
+				16FC3A7E2033904A00992FB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16FC3A7E2033904A00992FB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16FC3A7D2033904A00992FB3 /* TwonateApplication.app */,
+				16FC3A942033904A00992FB3 /* TwonateApplicationTests.xctest */,
+				16FC3A9F2033904A00992FB3 /* TwonateApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16FC3A7F2033904A00992FB3 /* TwonateApplication */ = {
+			isa = PBXGroup;
+			children = (
+				16FC3A802033904A00992FB3 /* AppDelegate.swift */,
+				16FC3A822033904A00992FB3 /* ViewController.swift */,
+				16FC3A842033904A00992FB3 /* Main.storyboard */,
+				16FC3A8A2033904A00992FB3 /* Assets.xcassets */,
+				16FC3A8C2033904A00992FB3 /* LaunchScreen.storyboard */,
+				16FC3A8F2033904A00992FB3 /* Info.plist */,
+				16FC3A872033904A00992FB3 /* TwonateApplication.xcdatamodeld */,
+			);
+			path = TwonateApplication;
+			sourceTree = "<group>";
+		};
+		16FC3A972033904A00992FB3 /* TwonateApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				16FC3A982033904A00992FB3 /* TwonateApplicationTests.swift */,
+				16FC3A9A2033904A00992FB3 /* Info.plist */,
+			);
+			path = TwonateApplicationTests;
+			sourceTree = "<group>";
+		};
+		16FC3AA22033904A00992FB3 /* TwonateApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16FC3AA32033904A00992FB3 /* TwonateApplicationUITests.swift */,
+				16FC3AA52033904A00992FB3 /* Info.plist */,
+			);
+			path = TwonateApplicationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16FC3A7C2033904A00992FB3 /* TwonateApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16FC3AA82033904A00992FB3 /* Build configuration list for PBXNativeTarget "TwonateApplication" */;
+			buildPhases = (
+				16FC3A792033904A00992FB3 /* Sources */,
+				16FC3A7A2033904A00992FB3 /* Frameworks */,
+				16FC3A7B2033904A00992FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwonateApplication;
+			productName = TwonateApplication;
+			productReference = 16FC3A7D2033904A00992FB3 /* TwonateApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16FC3A932033904A00992FB3 /* TwonateApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16FC3AAB2033904A00992FB3 /* Build configuration list for PBXNativeTarget "TwonateApplicationTests" */;
+			buildPhases = (
+				16FC3A902033904A00992FB3 /* Sources */,
+				16FC3A912033904A00992FB3 /* Frameworks */,
+				16FC3A922033904A00992FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16FC3A962033904A00992FB3 /* PBXTargetDependency */,
+			);
+			name = TwonateApplicationTests;
+			productName = TwonateApplicationTests;
+			productReference = 16FC3A942033904A00992FB3 /* TwonateApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16FC3A9E2033904A00992FB3 /* TwonateApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16FC3AAE2033904A00992FB3 /* Build configuration list for PBXNativeTarget "TwonateApplicationUITests" */;
+			buildPhases = (
+				16FC3A9B2033904A00992FB3 /* Sources */,
+				16FC3A9C2033904A00992FB3 /* Frameworks */,
+				16FC3A9D2033904A00992FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16FC3AA12033904A00992FB3 /* PBXTargetDependency */,
+			);
+			name = TwonateApplicationUITests;
+			productName = TwonateApplicationUITests;
+			productReference = 16FC3A9F2033904A00992FB3 /* TwonateApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16FC3A752033904A00992FB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = BarnettDevelopmentCompany;
+				TargetAttributes = {
+					16FC3A7C2033904A00992FB3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					16FC3A932033904A00992FB3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 16FC3A7C2033904A00992FB3;
+					};
+					16FC3A9E2033904A00992FB3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 16FC3A7C2033904A00992FB3;
+					};
+				};
+			};
+			buildConfigurationList = 16FC3A782033904A00992FB3 /* Build configuration list for PBXProject "TwonateApplication" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16FC3A742033904A00992FB3;
+			productRefGroup = 16FC3A7E2033904A00992FB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16FC3A7C2033904A00992FB3 /* TwonateApplication */,
+				16FC3A932033904A00992FB3 /* TwonateApplicationTests */,
+				16FC3A9E2033904A00992FB3 /* TwonateApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16FC3A7B2033904A00992FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FC3A8E2033904A00992FB3 /* LaunchScreen.storyboard in Resources */,
+				16FC3A8B2033904A00992FB3 /* Assets.xcassets in Resources */,
+				16FC3A862033904A00992FB3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FC3A922033904A00992FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FC3A9D2033904A00992FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16FC3A792033904A00992FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FC3A832033904A00992FB3 /* ViewController.swift in Sources */,
+				16FC3A892033904A00992FB3 /* TwonateApplication.xcdatamodeld in Sources */,
+				16FC3A812033904A00992FB3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FC3A902033904A00992FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FC3A992033904A00992FB3 /* TwonateApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FC3A9B2033904A00992FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FC3AA42033904A00992FB3 /* TwonateApplicationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16FC3A962033904A00992FB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16FC3A7C2033904A00992FB3 /* TwonateApplication */;
+			targetProxy = 16FC3A952033904A00992FB3 /* PBXContainerItemProxy */;
+		};
+		16FC3AA12033904A00992FB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16FC3A7C2033904A00992FB3 /* TwonateApplication */;
+			targetProxy = 16FC3AA02033904A00992FB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16FC3A842033904A00992FB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16FC3A852033904A00992FB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16FC3A8C2033904A00992FB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16FC3A8D2033904A00992FB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16FC3AA62033904A00992FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16FC3AA72033904A00992FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16FC3AA92033904A00992FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TwonateApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BarnettDevComp.TwonateApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16FC3AAA2033904A00992FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TwonateApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BarnettDevComp.TwonateApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		16FC3AAC2033904A00992FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TwonateApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BarnettDevComp.TwonateApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwonateApplication.app/TwonateApplication";
+			};
+			name = Debug;
+		};
+		16FC3AAD2033904A00992FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TwonateApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BarnettDevComp.TwonateApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwonateApplication.app/TwonateApplication";
+			};
+			name = Release;
+		};
+		16FC3AAF2033904A00992FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TwonateApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BarnettDevComp.TwonateApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TwonateApplication;
+			};
+			name = Debug;
+		};
+		16FC3AB02033904A00992FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TwonateApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BarnettDevComp.TwonateApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TwonateApplication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16FC3A782033904A00992FB3 /* Build configuration list for PBXProject "TwonateApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16FC3AA62033904A00992FB3 /* Debug */,
+				16FC3AA72033904A00992FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16FC3AA82033904A00992FB3 /* Build configuration list for PBXNativeTarget "TwonateApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16FC3AA92033904A00992FB3 /* Debug */,
+				16FC3AAA2033904A00992FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16FC3AAB2033904A00992FB3 /* Build configuration list for PBXNativeTarget "TwonateApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16FC3AAC2033904A00992FB3 /* Debug */,
+				16FC3AAD2033904A00992FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16FC3AAE2033904A00992FB3 /* Build configuration list for PBXNativeTarget "TwonateApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16FC3AAF2033904A00992FB3 /* Debug */,
+				16FC3AB02033904A00992FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		16FC3A872033904A00992FB3 /* TwonateApplication.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				16FC3A882033904A00992FB3 /* TwonateApplication.xcdatamodel */,
+			);
+			currentVersion = 16FC3A882033904A00992FB3 /* TwonateApplication.xcdatamodel */;
+			path = TwonateApplication.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 16FC3A752033904A00992FB3 /* Project object */;
+}
