@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16CC8EFD20695A3F00D0D1DC /* TwitterFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CC8EFC20695A3F00D0D1DC /* TwitterFunctions.swift */; };
 		16FC3A812033904A00992FB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A802033904A00992FB3 /* AppDelegate.swift */; };
 		16FC3A832033904A00992FB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A822033904A00992FB3 /* ViewController.swift */; };
 		16FC3A862033904A00992FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC3A842033904A00992FB3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		16FC3A8E2033904A00992FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC3A8C2033904A00992FB3 /* LaunchScreen.storyboard */; };
 		16FC3A992033904A00992FB3 /* TwonateApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A982033904A00992FB3 /* TwonateApplicationTests.swift */; };
 		16FC3AA42033904A00992FB3 /* TwonateApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3AA32033904A00992FB3 /* TwonateApplicationUITests.swift */; };
+		E2F1425FB6E21CBD7ADA123C /* Pods_TwonateApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52A143E9BBA7696C10AE0EC /* Pods_TwonateApplication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16CC8EFC20695A3F00D0D1DC /* TwitterFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterFunctions.swift; sourceTree = "<group>"; };
 		16FC3A7D2033904A00992FB3 /* TwonateApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwonateApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FC3A802033904A00992FB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FC3A822033904A00992FB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		16FC3A9F2033904A00992FB3 /* TwonateApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwonateApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FC3AA32033904A00992FB3 /* TwonateApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwonateApplicationUITests.swift; sourceTree = "<group>"; };
 		16FC3AA52033904A00992FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDC64D65C53D7FD6ED3BC7AC /* Pods-TwonateApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwonateApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication.release.xcconfig"; sourceTree = "<group>"; };
+		C02D5F9A223EC7F99F591621 /* Pods-TwonateApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwonateApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		E52A143E9BBA7696C10AE0EC /* Pods_TwonateApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwonateApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F1425FB6E21CBD7ADA123C /* Pods_TwonateApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C8D211A710F6EDCA0810D05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C02D5F9A223EC7F99F591621 /* Pods-TwonateApplication.debug.xcconfig */,
+				BDC64D65C53D7FD6ED3BC7AC /* Pods-TwonateApplication.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		16FC3A742033904A00992FB3 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +99,8 @@
 				16FC3A972033904A00992FB3 /* TwonateApplicationTests */,
 				16FC3AA22033904A00992FB3 /* TwonateApplicationUITests */,
 				16FC3A7E2033904A00992FB3 /* Products */,
+				0C8D211A710F6EDCA0810D05 /* Pods */,
+				4EBEB77BCC20C0674EE43E2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +119,7 @@
 			children = (
 				16FC3A802033904A00992FB3 /* AppDelegate.swift */,
 				16FC3A822033904A00992FB3 /* ViewController.swift */,
+				16CC8EFC20695A3F00D0D1DC /* TwitterFunctions.swift */,
 				16FC3A842033904A00992FB3 /* Main.storyboard */,
 				16FC3A8A2033904A00992FB3 /* Assets.xcassets */,
 				16FC3A8C2033904A00992FB3 /* LaunchScreen.storyboard */,
@@ -128,6 +147,14 @@
 			path = TwonateApplicationUITests;
 			sourceTree = "<group>";
 		};
+		4EBEB77BCC20C0674EE43E2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E52A143E9BBA7696C10AE0EC /* Pods_TwonateApplication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16FC3AA82033904A00992FB3 /* Build configuration list for PBXNativeTarget "TwonateApplication" */;
 			buildPhases = (
+				DD0A96006422D34C797907BD /* [CP] Check Pods Manifest.lock */,
 				16FC3A792033904A00992FB3 /* Sources */,
 				16FC3A7A2033904A00992FB3 /* Frameworks */,
 				16FC3A7B2033904A00992FB3 /* Resources */,
+				A425703FEA899437B9D60B4D /* [CP] Embed Pods Frameworks */,
+				8CC833510A7D0C74648C0BD9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,12 +287,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8CC833510A7D0C74648C0BD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A425703FEA899437B9D60B4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD0A96006422D34C797907BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwonateApplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16FC3A792033904A00992FB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				16FC3A832033904A00992FB3 /* ViewController.swift in Sources */,
+				16CC8EFD20695A3F00D0D1DC /* TwitterFunctions.swift in Sources */,
 				16FC3A892033904A00992FB3 /* TwonateApplication.xcdatamodeld in Sources */,
 				16FC3A812033904A00992FB3 /* AppDelegate.swift in Sources */,
 			);
@@ -428,6 +525,7 @@
 		};
 		16FC3AA92033904A00992FB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C02D5F9A223EC7F99F591621 /* Pods-TwonateApplication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +540,7 @@
 		};
 		16FC3AAA2033904A00992FB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDC64D65C53D7FD6ED3BC7AC /* Pods-TwonateApplication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

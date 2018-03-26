@@ -1,0 +1,10 @@
+platform :ios, '9.0'
+
+target 'Twonate' do
+
+pod 'Firebase'
+pod 'TwitterKit'
+
+use_frameworks!
+
+end
