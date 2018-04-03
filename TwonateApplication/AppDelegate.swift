@@ -8,6 +8,10 @@
 
 import UIKit
 import CoreData
+import Firebase
+
+//store userID for future use.
+var userID : String? = nil
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +20,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //Configure Firebase
+        FirebaseApp.configure()
+        
+        //Configure Twitter Kit
+        TWTRTwitter.sharedInstance().start(withConsumerKey:"c18jxuX7mpK57zNpT5sA3wLRm", consumerSecret: "3xr1H69nY0bvCpHsSCSOfAGDXqHrWh20wnW0BtJC0U8Z3xsSi9")
+    
+        var keywords = ["president", "this", "Nuclear"]
+        getUserTweetTexts () {
+            for tweet in postArray {
+                let results = searchTextForKeywords(text: tweet, keywords: keywords)
+                print("--------------------------------------------------")
+                print(tweet)
+                print("\n")
+                for i in 0 ..< keywords.count {
+                    print(String(keywords[i]) + ": " + String(results[i]))
+                }
+            }
+        }
+        
         return true
     }
 
@@ -44,6 +67,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.saveContext()
     }
 
+    //Handle redirect for twitter
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return TWTRTwitter.sharedInstance().application(app, open: url, options: options)
+    }
+    
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
