@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Search-->
         <scene sceneID="bQD-bJ-Ad0">
             <objects>
                 <viewController id="XeQ-sb-KM3" sceneMemberID="viewController">
@@ -37,7 +37,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4Tl-ff-l5q"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="iSg-nt-oX8"/>
+                    <tabBarItem key="tabBarItem" title="Search" id="iSg-nt-oX8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oea-xr-cKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +67,7 @@
             </objects>
             <point key="canvasLocation" x="-666" y="457"/>
         </scene>
-        <!--Item 1-->
+        <!--Profile-->
         <scene sceneID="dkF-xh-aS0">
             <objects>
                 <viewController id="59z-mT-9sg" sceneMemberID="viewController">
@@ -75,17 +75,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main Feed/ Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qod-f2-IZF">
-                                <rect key="frame" x="16" y="130" width="343" height="59"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Fundraisers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qod-f2-IZF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" red="0.62745098039215685" green="0.12549019607843137" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUj-he-03B">
-                                <rect key="frame" x="131" y="49" width="145" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUj-he-03B">
+                                <rect key="frame" x="326" y="15" width="33" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Settings"/>
+                                <state key="normal" title="Settings" image="download.png"/>
                                 <connections>
                                     <segue destination="Bh7-HG-zXi" kind="show" id="Wtu-Gc-x2s"/>
                                 </connections>
@@ -94,7 +95,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UwA-oW-uAe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="SdO-PD-ak2"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="SdO-PD-ak2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bk0-zg-6fW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,7 +168,7 @@
             </objects>
             <point key="canvasLocation" x="-2759" y="639"/>
         </scene>
-        <!--Item-->
+        <!--Leaderboards-->
         <scene sceneID="x90-OW-dkj">
             <objects>
                 <viewController id="7s7-I9-rCr" sceneMemberID="viewController">
@@ -186,7 +187,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RAU-Ni-I6I"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="g7C-2G-PUt"/>
+                    <tabBarItem key="tabBarItem" title="Leaderboards" id="g7C-2G-PUt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvS-xu-JeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -217,4 +218,7 @@
             <point key="canvasLocation" x="-713" y="1146"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="download.png" width="225" height="225"/>
+    </resources>
 </document>

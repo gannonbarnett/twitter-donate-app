@@ -15,6 +15,11 @@
 		16FC3A8E2033904A00992FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC3A8C2033904A00992FB3 /* LaunchScreen.storyboard */; };
 		16FC3A992033904A00992FB3 /* TwonateApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A982033904A00992FB3 /* TwonateApplicationTests.swift */; };
 		16FC3AA42033904A00992FB3 /* TwonateApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3AA32033904A00992FB3 /* TwonateApplicationUITests.swift */; };
+		217345C52069585400120D40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 217345C42069585300120D40 /* GoogleService-Info.plist */; };
+		217345C82072882F00120D40 /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 217345C72072882E00120D40 /* Righteous-Regular.ttf */; };
+		217345C92072883A00120D40 /* Righteous-Regular.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 217345C72072882E00120D40 /* Righteous-Regular.ttf */; };
+		217345CC2075438100120D40 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 217345CB2075438100120D40 /* download.png */; };
+		8F954108587CAB036E673ACE /* Pods_TwonateApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA6205BEB1FF6DABB07DCED /* Pods_TwonateApplication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,12 @@
 		16FC3A9F2033904A00992FB3 /* TwonateApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwonateApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FC3AA32033904A00992FB3 /* TwonateApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwonateApplicationUITests.swift; sourceTree = "<group>"; };
 		16FC3AA52033904A00992FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FA6205BEB1FF6DABB07DCED /* Pods_TwonateApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwonateApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		217345C42069585300120D40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		217345C72072882E00120D40 /* Righteous-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Righteous-Regular.ttf"; sourceTree = "<group>"; };
+		217345CB2075438100120D40 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		7131C13C2AEAB1B2FF8F4645 /* Pods-TwonateApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwonateApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		E958E3F8F1579E5E9E559EB6 /* Pods-TwonateApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwonateApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F954108587CAB036E673ACE /* Pods_TwonateApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,8 @@
 				16FC3A972033904A00992FB3 /* TwonateApplicationTests */,
 				16FC3AA22033904A00992FB3 /* TwonateApplicationUITests */,
 				16FC3A7E2033904A00992FB3 /* Products */,
+				A4B875EA9A55E4291BB4BFC2 /* Pods */,
+				7D6A4B532FF5ECCB783B1326 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +120,9 @@
 				16FC3A8C2033904A00992FB3 /* LaunchScreen.storyboard */,
 				16FC3A8F2033904A00992FB3 /* Info.plist */,
 				16FC3A872033904A00992FB3 /* TwonateApplication.xcdatamodeld */,
+				217345C42069585300120D40 /* GoogleService-Info.plist */,
+				217345CA2075437400120D40 /* Images */,
+				217345C62072881200120D40 /* Fonts */,
 			);
 			path = TwonateApplication;
 			sourceTree = "<group>";
@@ -128,6 +145,39 @@
 			path = TwonateApplicationUITests;
 			sourceTree = "<group>";
 		};
+		217345C62072881200120D40 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				217345C72072882E00120D40 /* Righteous-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		217345CA2075437400120D40 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				217345CB2075438100120D40 /* download.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		7D6A4B532FF5ECCB783B1326 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FA6205BEB1FF6DABB07DCED /* Pods_TwonateApplication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4B875EA9A55E4291BB4BFC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7131C13C2AEAB1B2FF8F4645 /* Pods-TwonateApplication.debug.xcconfig */,
+				E958E3F8F1579E5E9E559EB6 /* Pods-TwonateApplication.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16FC3AA82033904A00992FB3 /* Build configuration list for PBXNativeTarget "TwonateApplication" */;
 			buildPhases = (
+				849BA44459215B7BA8FF7045 /* [CP] Check Pods Manifest.lock */,
 				16FC3A792033904A00992FB3 /* Sources */,
 				16FC3A7A2033904A00992FB3 /* Frameworks */,
 				16FC3A7B2033904A00992FB3 /* Resources */,
+				3FCF61913022F66DE39610F7 /* [CP] Embed Pods Frameworks */,
+				6FEA3FBEBE9A7808E6ADE085 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,8 +289,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				16FC3A8E2033904A00992FB3 /* LaunchScreen.storyboard in Resources */,
+				217345C52069585400120D40 /* GoogleService-Info.plist in Resources */,
+				217345C82072882F00120D40 /* Righteous-Regular.ttf in Resources */,
 				16FC3A8B2033904A00992FB3 /* Assets.xcassets in Resources */,
 				16FC3A862033904A00992FB3 /* Main.storyboard in Resources */,
+				217345CC2075438100120D40 /* download.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,11 +313,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FCF61913022F66DE39610F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FEA3FBEBE9A7808E6ADE085 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		849BA44459215B7BA8FF7045 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwonateApplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16FC3A792033904A00992FB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217345C92072883A00120D40 /* Righteous-Regular.ttf in Sources */,
 				16FC3A832033904A00992FB3 /* ViewController.swift in Sources */,
 				16FC3A892033904A00992FB3 /* TwonateApplication.xcdatamodeld in Sources */,
 				16FC3A812033904A00992FB3 /* AppDelegate.swift in Sources */,
@@ -428,6 +543,7 @@
 		};
 		16FC3AA92033904A00992FB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7131C13C2AEAB1B2FF8F4645 /* Pods-TwonateApplication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +558,7 @@
 		};
 		16FC3AAA2033904A00992FB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E958E3F8F1579E5E9E559EB6 /* Pods-TwonateApplication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
