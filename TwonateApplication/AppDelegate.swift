@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import TwitterKit
 
 //store userID for future use.
 var userID : String? = nil
@@ -25,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         //Configure Twitter Kit
-        TWTRTwitter.sharedInstance().start(withConsumerKey:"c18jxuX7mpK57zNpT5sA3wLRm", consumerSecret: "3xr1H69nY0bvCpHsSCSOfAGDXqHrWh20wnW0BtJC0U8Z3xsSi9")
+        TWTRTwitter.sharedInstance().start(withConsumerKey:"7xZ3AIxhK4HEal0SArWbKjvRi", consumerSecret: "l6tDYWs2D3yfMkVp0hf9DXivU6mtcFM6i25sHTmbHSNIJagUUa")
     
         var keywords = ["president", "this", "Nuclear"]
         getUserTweetTexts () {

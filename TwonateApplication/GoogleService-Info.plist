@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>1070043829562-1u8023r4tgtolck0a4me1btfdir6fmah.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1070043829562-1u8023r4tgtolck0a4me1btfdir6fmah</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDXzXXr9b9ckCwoWE3wFmesDbEMp_m_6_M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1070043829562</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>BarnettDevComp.TwonateApplication</string>
+	<key>PROJECT_ID</key>
+	<string>twonateapp-20bdc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>twonateapp-20bdc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1070043829562:ios:9f8423c78abaeec4</string>
+	<key>DATABASE_URL</key>
+	<string>https://twonateapp-20bdc.firebaseio.com</string>
+</dict>
+</plist>

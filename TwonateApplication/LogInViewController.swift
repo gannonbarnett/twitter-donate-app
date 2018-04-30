@@ -7,39 +7,50 @@
 //
 
 import UIKit
+import Firebase
+import TwitterKit
 
 class LogInViewController: UIViewController {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+     
         let logInButton = TWTRLogInButton(logInCompletion: { session, error in
             if (session != nil) {
-                print("signed in as \(session!.userName)");
+                let authToken = session?.authToken
+                let authTokenSecret = session?.authTokenSecret
+                
+                self.authenticateUserWithFirebase(authToken: authToken!, authTokenSecret: authTokenSecret!)
+                // ...
             } else {
-                print("error: \(error!.localizedDescription)");
+                // ...
             }
         })
         logInButton.center = self.view.center
         self.view.addSubview(logInButton)
         
+    }
+    
+    func authenticateUserWithFirebase(authToken: String, authTokenSecret: String) {
+        let credential = TwitterAuthProvider.credential(withToken: authToken, secret: authTokenSecret)
         
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if let error = error {
+                // ...
+                print(error)
+                return
+            }
+            // User is signed in
+            // ...
+            print("User successfully signed in with Firebase!")
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
