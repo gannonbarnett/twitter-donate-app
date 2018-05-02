@@ -12,7 +12,6 @@ import TwitterKit
 
 class LogInViewController: UIViewController {
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
      
@@ -44,6 +43,21 @@ class LogInViewController: UIViewController {
             // User is signed in
             // ...
             print("User successfully signed in with Firebase!")
+            guard let id = Auth.auth().currentUser?.uid else { return }
+            self.saveUserIDToFirebaseDatabase(id: id)
+            self.performSegue(withIdentifier: "loginVCToHomescreenVC", sender: self)
+        }
+    }
+    
+    func saveUserIDToFirebaseDatabase(id: String) {
+        let myRef = Database.database().reference().child("users/\(id)")
+        let newValue = ["id": id] as [String: Any]
+        myRef.setValue(newValue) { (error, ref) in
+            if error != nil {
+                print(error?.localizedDescription ?? "Failed to update value")
+            } else {
+                print("Success update newValue to database")
+            }
         }
     }
 
