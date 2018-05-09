@@ -10,7 +10,7 @@ import UIKit
 
 class SearchViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    var fundraisers: [Int] = [0, 1, 2 , 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    var fundraisers: [String] = ["banteng.png", "bear.png", "bison.png", "boar.png", "deer.png", "dog.png", "fox.png", "ibex.png", "mallard.png", "moose.png", "ghostbunny.png", "ram.png"]
     var count = 0
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -20,7 +20,7 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "fundraiserCell", for: indexPath) as! FundraiserCollectionViewCell
         
-        cell.id.text = String(count)
+        cell.image.image = UIImage(named: fundraisers[count])
         self.count += 1
         
         return cell

@@ -11,6 +11,7 @@ import UIKit
 
 
 class FundraiserCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var id: UILabel!
+    
+    @IBOutlet weak var image: UIImageView!
     
 }
