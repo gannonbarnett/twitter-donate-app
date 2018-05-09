@@ -15,10 +15,24 @@
 		16FC3A8E2033904A00992FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC3A8C2033904A00992FB3 /* LaunchScreen.storyboard */; };
 		16FC3A992033904A00992FB3 /* TwonateApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A982033904A00992FB3 /* TwonateApplicationTests.swift */; };
 		16FC3AA42033904A00992FB3 /* TwonateApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3AA32033904A00992FB3 /* TwonateApplicationUITests.swift */; };
+		211DCA2820A33032008A909A /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 211DCA1F20A3302D008A909A /* search@3x.png */; };
+		211DCA2920A33032008A909A /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 211DCA2020A3302D008A909A /* profile@2x.png */; };
+		211DCA2A20A33032008A909A /* leaderboads@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 211DCA2120A3302E008A909A /* leaderboads@2x.png */; };
+		211DCA2B20A33032008A909A /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 211DCA2220A3302E008A909A /* profile.png */; };
+		211DCA2C20A33032008A909A /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 211DCA2320A3302F008A909A /* search.png */; };
+		211DCA2D20A33032008A909A /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 211DCA2420A33030008A909A /* search@2x.png */; };
+		211DCA2E20A33032008A909A /* leaderboads.png in Resources */ = {isa = PBXBuildFile; fileRef = 211DCA2520A33030008A909A /* leaderboads.png */; };
+		211DCA2F20A33032008A909A /* profile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 211DCA2620A33031008A909A /* profile@3x.png */; };
+		211DCA3020A33032008A909A /* leaderboads@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 211DCA2720A33032008A909A /* leaderboads@3x.png */; };
 		217345C52069585400120D40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 217345C42069585300120D40 /* GoogleService-Info.plist */; };
 		217345C82072882F00120D40 /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 217345C72072882E00120D40 /* Righteous-Regular.ttf */; };
 		217345C92072883A00120D40 /* Righteous-Regular.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 217345C72072882E00120D40 /* Righteous-Regular.ttf */; };
 		217345CC2075438100120D40 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 217345CB2075438100120D40 /* download.png */; };
+		217345CE20954EC400120D40 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217345CD20954EC400120D40 /* SearchViewController.swift */; };
+		217345D02095515F00120D40 /* Fundraiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217345CF2095515F00120D40 /* Fundraiser.swift */; };
+		217345D22095528900120D40 /* FundraiserCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217345D12095528800120D40 /* FundraiserCollection.swift */; };
+		217345D4209571B800120D40 /* Scraps in Resources */ = {isa = PBXBuildFile; fileRef = 217345D3209571B800120D40 /* Scraps */; };
+		21787C3620A0AF3100BE5009 /* FundraiserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21787C3520A0AF3100BE5009 /* FundraiserCollectionViewCell.swift */; };
 		8F954108587CAB036E673ACE /* Pods_TwonateApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA6205BEB1FF6DABB07DCED /* Pods_TwonateApplication.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +69,23 @@
 		16FC3AA32033904A00992FB3 /* TwonateApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwonateApplicationUITests.swift; sourceTree = "<group>"; };
 		16FC3AA52033904A00992FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FA6205BEB1FF6DABB07DCED /* Pods_TwonateApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwonateApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		211DCA1F20A3302D008A909A /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@3x.png"; sourceTree = "<group>"; };
+		211DCA2020A3302D008A909A /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
+		211DCA2120A3302E008A909A /* leaderboads@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leaderboads@2x.png"; sourceTree = "<group>"; };
+		211DCA2220A3302E008A909A /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		211DCA2320A3302F008A909A /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		211DCA2420A33030008A909A /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		211DCA2520A33030008A909A /* leaderboads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboads.png; sourceTree = "<group>"; };
+		211DCA2620A33031008A909A /* profile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@3x.png"; sourceTree = "<group>"; };
+		211DCA2720A33032008A909A /* leaderboads@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leaderboads@3x.png"; sourceTree = "<group>"; };
 		217345C42069585300120D40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		217345C72072882E00120D40 /* Righteous-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Righteous-Regular.ttf"; sourceTree = "<group>"; };
 		217345CB2075438100120D40 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		217345CD20954EC400120D40 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		217345CF2095515F00120D40 /* Fundraiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fundraiser.swift; sourceTree = "<group>"; };
+		217345D12095528800120D40 /* FundraiserCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserCollection.swift; sourceTree = "<group>"; };
+		217345D3209571B800120D40 /* Scraps */ = {isa = PBXFileReference; lastKnownFileType = text; path = Scraps; sourceTree = "<group>"; };
+		21787C3520A0AF3100BE5009 /* FundraiserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserCollectionViewCell.swift; sourceTree = "<group>"; };
 		7131C13C2AEAB1B2FF8F4645 /* Pods-TwonateApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwonateApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		E958E3F8F1579E5E9E559EB6 /* Pods-TwonateApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwonateApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +143,12 @@
 			children = (
 				16FC3A802033904A00992FB3 /* AppDelegate.swift */,
 				16FC3A822033904A00992FB3 /* ViewController.swift */,
+				217345CD20954EC400120D40 /* SearchViewController.swift */,
+				21787C3520A0AF3100BE5009 /* FundraiserCollectionViewCell.swift */,
+				217345D3209571B800120D40 /* Scraps */,
 				16FC3A842033904A00992FB3 /* Main.storyboard */,
+				217345CF2095515F00120D40 /* Fundraiser.swift */,
+				217345D12095528800120D40 /* FundraiserCollection.swift */,
 				16FC3A8A2033904A00992FB3 /* Assets.xcassets */,
 				16FC3A8C2033904A00992FB3 /* LaunchScreen.storyboard */,
 				16FC3A8F2033904A00992FB3 /* Info.plist */,
@@ -156,6 +189,15 @@
 		217345CA2075437400120D40 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				211DCA2520A33030008A909A /* leaderboads.png */,
+				211DCA2120A3302E008A909A /* leaderboads@2x.png */,
+				211DCA2720A33032008A909A /* leaderboads@3x.png */,
+				211DCA2220A3302E008A909A /* profile.png */,
+				211DCA2020A3302D008A909A /* profile@2x.png */,
+				211DCA2620A33031008A909A /* profile@3x.png */,
+				211DCA2320A3302F008A909A /* search.png */,
+				211DCA2420A33030008A909A /* search@2x.png */,
+				211DCA1F20A3302D008A909A /* search@3x.png */,
 				217345CB2075438100120D40 /* download.png */,
 			);
 			path = Images;
@@ -289,11 +331,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				16FC3A8E2033904A00992FB3 /* LaunchScreen.storyboard in Resources */,
+				211DCA2820A33032008A909A /* search@3x.png in Resources */,
+				217345D4209571B800120D40 /* Scraps in Resources */,
 				217345C52069585400120D40 /* GoogleService-Info.plist in Resources */,
 				217345C82072882F00120D40 /* Righteous-Regular.ttf in Resources */,
 				16FC3A8B2033904A00992FB3 /* Assets.xcassets in Resources */,
+				211DCA3020A33032008A909A /* leaderboads@3x.png in Resources */,
 				16FC3A862033904A00992FB3 /* Main.storyboard in Resources */,
+				211DCA2C20A33032008A909A /* search.png in Resources */,
 				217345CC2075438100120D40 /* download.png in Resources */,
+				211DCA2F20A33032008A909A /* profile@3x.png in Resources */,
+				211DCA2B20A33032008A909A /* profile.png in Resources */,
+				211DCA2920A33032008A909A /* profile@2x.png in Resources */,
+				211DCA2D20A33032008A909A /* search@2x.png in Resources */,
+				211DCA2E20A33032008A909A /* leaderboads.png in Resources */,
+				211DCA2A20A33032008A909A /* leaderboads@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +428,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217345CE20954EC400120D40 /* SearchViewController.swift in Sources */,
 				217345C92072883A00120D40 /* Righteous-Regular.ttf in Sources */,
+				217345D22095528900120D40 /* FundraiserCollection.swift in Sources */,
+				21787C3620A0AF3100BE5009 /* FundraiserCollectionViewCell.swift in Sources */,
+				217345D02095515F00120D40 /* Fundraiser.swift in Sources */,
 				16FC3A832033904A00992FB3 /* ViewController.swift in Sources */,
 				16FC3A892033904A00992FB3 /* TwonateApplication.xcdatamodeld in Sources */,
 				16FC3A812033904A00992FB3 /* AppDelegate.swift in Sources */,
@@ -547,6 +603,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TwonateApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BarnettDevComp.TwonateApplication;
@@ -562,6 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TwonateApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BarnettDevComp.TwonateApplication;

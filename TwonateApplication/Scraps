@@ -1,0 +1,82 @@
+//
+//  SearchViewController.swift
+//  TwonateApplication
+//
+//  Created by Daniel Korsunsky on 4/28/18.
+//  Copyright © 2018 BarnettDevelopmentCompany. All rights reserved.
+//
+
+import UIKit
+
+class SearchViewController: UITableViewController {
+var fundraiserCollection = FundraiserCollection()
+let searchController = UISearchController(searchResultsController: nil)
+var filteredFundraisers = [Fundraiser]()
+
+override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+if isFiltering() {
+return filteredFundraisers.count
+}
+return fundraiserCollection.fundraisers.count
+}
+
+override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+var item: Fundraiser
+
+if isFiltering() {
+item = filteredFundraisers[indexPath.row]
+} else {
+item = fundraiserCollection.fundraisers[indexPath.row]
+
+}
+
+cell.textLabel?.text = item.name
+cell.detailTextLabel?.text = "\(item.progress * 100)%"
+
+return cell
+
+}
+
+func searchBarIsEmpty() -> Bool {
+return searchController.searchBar.text?.isEmpty ?? true
+}
+
+func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+filteredFundraisers = fundraiserCollection.fundraisers.filter({( fundraiser : Fundraiser) -> Bool in
+return fundraiser.name.lowercased().contains(searchText.lowercased())
+})
+
+tableView.reloadData()
+}
+
+func isFiltering() -> Bool {
+return searchController.isActive && !searchBarIsEmpty()
+}
+
+
+
+override func viewDidLoad() {
+super.viewDidLoad()
+
+searchController.searchResultsUpdater = self
+searchController.obscuresBackgroundDuringPresentation = false
+searchController.searchBar.placeholder = "Search Fundraisers"
+navigationItem.searchController = searchController
+definesPresentationContext = true
+
+let statusBarHeight = UIApplication.shared.statusBarFrame.height
+let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
+tableView.contentInset = insets
+tableView.scrollIndicatorInsets = insets
+}
+}
+
+extension SearchViewController: UISearchResultsUpdating {
+
+func updateSearchResults(for searchController: UISearchController) {
+filterContentForSearchText(searchController.searchBar.text!)
+}
+
+}
+

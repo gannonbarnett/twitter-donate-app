@@ -19,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+//        let fundraiserCollection = FundraiserCollection()
+//        let searchController = window!.rootViewController as! SearchViewController
+//        searchController.fundraiserCollection = fundraiserCollection
+        
         return true
     }
 
