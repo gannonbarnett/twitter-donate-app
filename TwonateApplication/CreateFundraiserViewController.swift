@@ -1,0 +1,182 @@
+//
+//  CreateFundraiserViewController.swift
+//  TwonateApplication
+//
+//  Created by Max Goldberg on 5/15/18.
+//  Copyright © 2018 BarnettDevelopmentCompany. All rights reserved.
+//
+
+import UIKit
+import Firebase
+
+class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+    var fundraiserName = ""
+    var fundraiserTargetTwitterHandle = ""
+    var fundraiserKeywords = [String]()
+    var fundraiserBid = ""
+    var fundraiserGoal = ""
+    var fundraiserImage: UIImage?
+    
+    let imagePicker = UIImagePickerController()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        
+        imagePicker.delegate = self
+        
+        // Resign keyboard when user touches somewhere on the screen
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CreateFundraiserViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    // Create a new fundraiser object on Firebase Database
+    @IBAction func addFundraiser(_ sender: UIButton) {
+        createFundraiser(name: self.fundraiserName, targetHandle: self.fundraiserTargetTwitterHandle, keywords: self.fundraiserKeywords, bid: self.fundraiserBid, goal: self.fundraiserGoal, image: self.fundraiserImage)
+    dismiss(animated: true, completion: nil)
+    }
+    
+    
+
+    func createFundraiser(name: String, targetHandle: String, keywords: [String], bid: String, goal: String, image: UIImage?) {
+        
+        let randomID = randomString(length: 19)
+        
+        let myRef = Database.database().reference().child("fundraisers/\(randomID)")
+        let newValue = ["handle" : targetHandle, "name" : name, "bid" : bid, "goal" : goal] as [String: Any]
+        myRef.setValue(newValue) { (error, ref) in
+            if error != nil {
+                print(error?.localizedDescription ?? "Failed to update value")
+            } else {
+                print("Created fundraiser on Firebase database")
+                
+                if image != nil {
+                    let imageData = UIImageJPEGRepresentation(image!, 0.8)
+                    let storageRef = Storage.storage().reference()
+                    let fundraiserImagesRef = storageRef.child("FundraiserImages/\(randomID)")
+                    let metadata = StorageMetadata()
+                    metadata.contentType = "image/jpg"
+                    
+                    // Upload the image to the path "FundraiserImages/FUNDRAISERID.jpg"
+                    let uploadTask = fundraiserImagesRef.putData(imageData!, metadata: metadata) { (metadata, error) in
+                        guard let metadata = metadata else {
+                            // Uh-oh, an error occurred!
+                            return
+                        }
+                        
+            
+                        // You can also access to download URL after upload.
+                        fundraiserImagesRef.downloadURL { (url, error) in
+                            guard let downloadURL = url else {
+                                // Uh-oh, an error occurred!
+                                return
+                            }
+                            
+                            let myRef3 = Database.database().reference().child("fundraisers/\(randomID)/image")
+                            let newValue3 = downloadURL.absoluteString
+                            myRef3.setValue(newValue3) { (error, ref) in
+                                if error != nil {
+                                    print(error?.localizedDescription ?? "Failed to update value")
+                                } else {
+                                    print("Added fundraiser image on Firebase database")
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                for keyword in keywords {
+                    let myRef2 = Database.database().reference().child("fundraisers/\(randomID)/keywords/\(keyword)")
+                    let newValue2 = [Auth.auth().currentUser?.uid]
+                    myRef2.setValue(newValue2) { (error, ref) in
+                        if error != nil {
+                            print(error?.localizedDescription ?? "Failed to update value")
+                        } else {
+                            print("Updated keywords on Firebase database")
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    
+    @IBAction func addImage(_ sender: UIButton) {
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.tag == 1 {
+            self.fundraiserName = textField.text!
+        } else if textField.tag == 2 {
+            self.fundraiserTargetTwitterHandle = textField.text!
+        } else if textField.tag == 3 {
+            var keywords = [String]()
+            let parsedKeywordString = textField.text!.components(separatedBy: ",")
+            for keyword in parsedKeywordString {
+                keywords.append(keyword)
+            }
+            self.fundraiserKeywords = keywords
+        } else if textField.tag == 4 {
+            self.fundraiserBid = textField.text!
+        } else if textField.tag == 5 {
+            self.fundraiserGoal = textField.text!
+        }
+    }
+    
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    
+    // Helps us generate a random fundraiser ID
+    func randomString(length: Int) -> String {
+        
+        let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        let len = UInt32(letters.length)
+        
+        var randomString = ""
+        
+        for _ in 0 ..< length {
+            let rand = arc4random_uniform(len)
+            var nextChar = letters.character(at: Int(rand))
+            randomString += NSString(characters: &nextChar, length: 1) as String
+        }
+        
+        return randomString
+    }
+    
+    
+    // Image Picker Delegate Methods
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            fundraiserImage = pickedImage
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion:nil)
+    }
+    
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+}

@@ -19,6 +19,7 @@
 		16FC3AA42033904A00992FB3 /* TwonateApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3AA32033904A00992FB3 /* TwonateApplicationUITests.swift */; };
 		16FDA683207288210026EFA3 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FDA682207288210026EFA3 /* LogInViewController.swift */; };
 		53069EBE2097754400534074 /* FundraisersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53069EBD2097754400534074 /* FundraisersViewController.swift */; };
+		532166E620AB7D5A008D1803 /* CreateFundraiserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532166E520AB7D5A008D1803 /* CreateFundraiserViewController.swift */; };
 		536D85A62075C397003EC86E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 536D85A52075C397003EC86E /* GoogleService-Info.plist */; };
 		53B3604120A898BA005DFAFC /* Fundraiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3604020A898BA005DFAFC /* Fundraiser.swift */; };
 		53B3604320A89931005DFAFC /* FundraiserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3604220A89931005DFAFC /* FundraiserCollectionViewCell.swift */; };
@@ -62,6 +63,7 @@
 		16FC3AA52033904A00992FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16FDA682207288210026EFA3 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		53069EBD2097754400534074 /* FundraisersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraisersViewController.swift; sourceTree = "<group>"; };
+		532166E520AB7D5A008D1803 /* CreateFundraiserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFundraiserViewController.swift; sourceTree = "<group>"; };
 		536D85A52075C397003EC86E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		53B3604020A898BA005DFAFC /* Fundraiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fundraiser.swift; sourceTree = "<group>"; };
 		53B3604220A89931005DFAFC /* FundraiserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				16FDA682207288210026EFA3 /* LogInViewController.swift */,
 				53069EBD2097754400534074 /* FundraisersViewController.swift */,
 				53B3604220A89931005DFAFC /* FundraiserCollectionViewCell.swift */,
+				532166E520AB7D5A008D1803 /* CreateFundraiserViewController.swift */,
 				53B3604020A898BA005DFAFC /* Fundraiser.swift */,
 				16CC8EFC20695A3F00D0D1DC /* TwitterFunctions.swift */,
 				16FC3A842033904A00992FB3 /* Main.storyboard */,
@@ -386,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16CC8F01206ACDEF00D0D1DC /* AppDelegate-TwitterAPI.m in Sources */,
+				532166E620AB7D5A008D1803 /* CreateFundraiserViewController.swift in Sources */,
 				16FC3A832033904A00992FB3 /* ViewController.swift in Sources */,
 				16FDA683207288210026EFA3 /* LogInViewController.swift in Sources */,
 				16CC8EFD20695A3F00D0D1DC /* TwitterFunctions.swift in Sources */,

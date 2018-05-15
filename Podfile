@@ -5,7 +5,9 @@ target 'TwonateApplication' do
 	pod 'Firebase'
 	pod 'Firebase/Database'
 	pod 'TwitterKit' 
-        pod 'Firebase/Auth'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Core'
+    pod 'Firebase/Storage'
 	pod 'UICircularProgressRing'
 
 	use_frameworks!
