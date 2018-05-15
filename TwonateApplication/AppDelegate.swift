@@ -12,7 +12,7 @@ import Firebase
 import TwitterKit
 
 //store userID for future use.
-var userID : String? = nil
+var userID: String? = nil
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -50,13 +50,15 @@ class LogInViewController: UIViewController {
     }
     
     func saveUserIDToFirebaseDatabase(id: String) {
+        let fundraisers = ""
+        let profilePicture = ""
         let myRef = Database.database().reference().child("users/\(id)")
-        let newValue = ["id": id] as [String: Any]
+        let newValue = ["id" : id, "fundraisers" : fundraisers, "profilePicture" : profilePicture] as [String: Any]
         myRef.setValue(newValue) { (error, ref) in
             if error != nil {
                 print(error?.localizedDescription ?? "Failed to update value")
             } else {
-                print("Success update newValue to database")
+                print("Created user on Firebase database")
             }
         }
     }
