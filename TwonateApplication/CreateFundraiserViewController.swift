@@ -35,8 +35,14 @@ class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UII
     
     // Create a new fundraiser object on Firebase Database
     @IBAction func addFundraiser(_ sender: UIButton) {
-        createFundraiser(name: self.fundraiserName, targetHandle: self.fundraiserTargetTwitterHandle, keywords: self.fundraiserKeywords, bid: self.fundraiserBid, goal: self.fundraiserGoal, image: self.fundraiserImage) {
-            self.dismiss(animated: true, completion: nil)
+        if self.fundraiserName == "" || self.fundraiserTargetTwitterHandle == "" || self.fundraiserKeywords.isEmpty || self.fundraiserBid == "" || self.fundraiserGoal == "" || self.fundraiserImage == nil {
+            let alert = UIAlertController(title: "Couldn't Create Fundraiser", message: "Please make sure all fields are filled and try again!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        } else {
+            createFundraiser(name: self.fundraiserName, targetHandle: self.fundraiserTargetTwitterHandle, keywords: self.fundraiserKeywords, bid: self.fundraiserBid, goal: self.fundraiserGoal, image: self.fundraiserImage) {
+                self.dismiss(animated: true, completion: nil)
+            }
         }
     }
     
@@ -107,22 +113,24 @@ class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UII
                 
                 let myRef4 = Database.database().reference().child("users/\(Auth.auth().currentUser!.uid)/fundraisers")
                 var currentFundraisers = ""
-                myRef4.observe(.value, with: { (DataSnapshot) in
+                
+                myRef4.observeSingleEvent(of: .value, with: { (DataSnapshot) in
                     currentFundraisers = (DataSnapshot.value!) as! String
-                })
-                var newValue4 = ""
-                if currentFundraisers != "" {
-                   newValue4 = currentFundraisers + "," + self.fundraiserName
-                } else {
-                    newValue4 = self.fundraiserName
-                }
-                myRef4.setValue(newValue4) { (error, ref) in
-                    if error != nil {
-                        print(error?.localizedDescription ?? "Failed to update value")
+                    
+                    var newValue4 = ""
+                    if currentFundraisers != "" {
+                        newValue4 = currentFundraisers + "," + self.fundraiserName
                     } else {
-                        print("Updated user's fundraisers on Firebase database")
+                        newValue4 = self.fundraiserName
                     }
-                }
+                    myRef4.setValue(newValue4) { (error, ref) in
+                        if error != nil {
+                            print(error?.localizedDescription ?? "Failed to update value")
+                        } else {
+                            print("Updated user's fundraisers on Firebase database")
+                        }
+                    }
+                })
             }
         }
         
@@ -192,7 +200,7 @@ class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UII
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        dismiss(animated: true, completion:nil)
+        dismiss(animated: true, completion: nil)
     }
     
     
