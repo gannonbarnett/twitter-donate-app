@@ -35,13 +35,17 @@ class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UII
     
     // Create a new fundraiser object on Firebase Database
     @IBAction func addFundraiser(_ sender: UIButton) {
-        createFundraiser(name: self.fundraiserName, targetHandle: self.fundraiserTargetTwitterHandle, keywords: self.fundraiserKeywords, bid: self.fundraiserBid, goal: self.fundraiserGoal, image: self.fundraiserImage)
-    dismiss(animated: true, completion: nil)
+        createFundraiser(name: self.fundraiserName, targetHandle: self.fundraiserTargetTwitterHandle, keywords: self.fundraiserKeywords, bid: self.fundraiserBid, goal: self.fundraiserGoal, image: self.fundraiserImage) {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
+    @IBAction func close(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 
-    func createFundraiser(name: String, targetHandle: String, keywords: [String], bid: String, goal: String, image: UIImage?) {
+    func createFundraiser(name: String, targetHandle: String, keywords: [String], bid: String, goal: String, image: UIImage?, completion: @escaping () -> Void) {
         
         let randomID = randomString(length: 19)
         
@@ -83,6 +87,7 @@ class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UII
                                 } else {
                                     print("Added fundraiser image on Firebase database")
                                 }
+                                completion()
                             }
                         }
                     }
@@ -97,6 +102,25 @@ class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UII
                         } else {
                             print("Updated keywords on Firebase database")
                         }
+                    }
+                }
+                
+                let myRef4 = Database.database().reference().child("users/\(Auth.auth().currentUser!.uid)/fundraisers")
+                var currentFundraisers = ""
+                myRef4.observe(.value, with: { (DataSnapshot) in
+                    currentFundraisers = (DataSnapshot.value!) as! String
+                })
+                var newValue4 = ""
+                if currentFundraisers != "" {
+                   newValue4 = currentFundraisers + "," + self.fundraiserName
+                } else {
+                    newValue4 = self.fundraiserName
+                }
+                myRef4.setValue(newValue4) { (error, ref) in
+                    if error != nil {
+                        print(error?.localizedDescription ?? "Failed to update value")
+                    } else {
+                        print("Updated user's fundraisers on Firebase database")
                     }
                 }
             }

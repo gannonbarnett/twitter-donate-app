@@ -10,7 +10,6 @@
 		16CC8EFD20695A3F00D0D1DC /* TwitterFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CC8EFC20695A3F00D0D1DC /* TwitterFunctions.swift */; };
 		16CC8F01206ACDEF00D0D1DC /* AppDelegate-TwitterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CC8F00206ACDEF00D0D1DC /* AppDelegate-TwitterAPI.m */; };
 		16FC3A812033904A00992FB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A802033904A00992FB3 /* AppDelegate.swift */; };
-		16FC3A832033904A00992FB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A822033904A00992FB3 /* ViewController.swift */; };
 		16FC3A862033904A00992FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC3A842033904A00992FB3 /* Main.storyboard */; };
 		16FC3A892033904A00992FB3 /* TwonateApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A872033904A00992FB3 /* TwonateApplication.xcdatamodeld */; };
 		16FC3A8B2033904A00992FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FC3A8A2033904A00992FB3 /* Assets.xcassets */; };
@@ -49,7 +48,6 @@
 		16CC8F00206ACDEF00D0D1DC /* AppDelegate-TwitterAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate-TwitterAPI.m"; sourceTree = "<group>"; };
 		16FC3A7D2033904A00992FB3 /* TwonateApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwonateApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FC3A802033904A00992FB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16FC3A822033904A00992FB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		16FC3A852033904A00992FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16FC3A882033904A00992FB3 /* TwonateApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwonateApplication.xcdatamodel; sourceTree = "<group>"; };
 		16FC3A8A2033904A00992FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				16FC3A802033904A00992FB3 /* AppDelegate.swift */,
-				16FC3A822033904A00992FB3 /* ViewController.swift */,
 				16FDA682207288210026EFA3 /* LogInViewController.swift */,
 				53069EBD2097754400534074 /* FundraisersViewController.swift */,
 				53B3604220A89931005DFAFC /* FundraiserCollectionViewCell.swift */,
@@ -342,6 +339,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
@@ -352,6 +350,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
@@ -390,7 +389,6 @@
 			files = (
 				16CC8F01206ACDEF00D0D1DC /* AppDelegate-TwitterAPI.m in Sources */,
 				532166E620AB7D5A008D1803 /* CreateFundraiserViewController.swift in Sources */,
-				16FC3A832033904A00992FB3 /* ViewController.swift in Sources */,
 				16FDA683207288210026EFA3 /* LogInViewController.swift in Sources */,
 				16CC8EFD20695A3F00D0D1DC /* TwitterFunctions.swift in Sources */,
 				53B3604320A89931005DFAFC /* FundraiserCollectionViewCell.swift in Sources */,

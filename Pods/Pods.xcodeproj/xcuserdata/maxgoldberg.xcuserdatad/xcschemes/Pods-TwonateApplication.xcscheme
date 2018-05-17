@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A3199BFED37C3A8910F82B74B6A66BF"
+               BlueprintIdentifier = "0243F09770E0A85114F50A7802A641BE"
                BuildableName = "Pods_TwonateApplication.framework"
                BlueprintName = "Pods-TwonateApplication"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9A3199BFED37C3A8910F82B74B6A66BF"
+            BlueprintIdentifier = "0243F09770E0A85114F50A7802A641BE"
             BuildableName = "Pods_TwonateApplication.framework"
             BlueprintName = "Pods-TwonateApplication"
             ReferencedContainer = "container:Pods.xcodeproj">

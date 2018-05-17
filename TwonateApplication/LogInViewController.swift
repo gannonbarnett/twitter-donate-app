@@ -28,7 +28,6 @@ class LogInViewController: UIViewController {
         })
         logInButton.center = self.view.center
         self.view.addSubview(logInButton)
-        
     }
     
     func authenticateUserWithFirebase(authToken: String, authTokenSecret: String) {

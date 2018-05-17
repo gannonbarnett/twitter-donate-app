@@ -10,16 +10,14 @@ import UIKit
 
 class Fundraiser: NSObject {
     var name: String
-    var progress: Double
     var handle: String
     var keywords: [String]
     var bid: String
     var goal: String
-    var image: UIImage?
+    var image: String
     
-    init(name: String, progress: Double, handle: String, image: UIImage?, keywords: [String], bid: String, goal: String) {
+    init(name: String, handle: String, image: String, keywords: [String], bid: String, goal: String) {
         self.name = name
-        self.progress = progress
         self.handle = handle
         self.image = image
         self.keywords = keywords
