@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 import Firebase
 
 class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -46,7 +47,7 @@ class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UII
         let randomID = randomString(length: 19)
         
         let myRef = Database.database().reference().child("fundraisers/\(randomID)")
-        let newValue = ["handle" : targetHandle, "name" : name, "bid" : bid, "goal" : goal] as [String: Any]
+        let newValue = ["handle" : targetHandle, "name" : name, "bid" : bid, "goal" : goal, "user_statistics" : [Auth.auth().currentUser!.uid : 0]] as [String: Any]
         myRef.setValue(newValue) { (error, ref) in
             if error != nil {
                 print(error?.localizedDescription ?? "Failed to update value")
@@ -101,6 +102,15 @@ class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UII
                 }
             }
         }
+        
+        Database.database().reference().child("activeHandles/" + targetHandle + "/fundraisers/" + randomID).setValue(randomID);
+        
+        //check if handle exists already
+        Database.database().reference().child("activeHandles").observeSingleEvent(of: .value, with: { (snapshot) in
+            if snapshot.hasChild(targetHandle){
+                Database.database().reference().child("activeHandles/" + targetHandle + "/lastID").setValue(0);
+            }
+        })
         
     }
     
