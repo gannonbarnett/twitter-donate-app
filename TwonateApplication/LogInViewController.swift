@@ -43,8 +43,17 @@ class LogInViewController: UIViewController {
             // ...
             print("User successfully signed in with Firebase!")
             guard let id = Auth.auth().currentUser?.uid else { return }
-            self.saveUserIDToFirebaseDatabase(id: id)
-            self.performSegue(withIdentifier: "loginVCToHomescreenVC", sender: self)
+            
+            let ref = Database.database().reference().child("users")
+            ref.observeSingleEvent(of: .value, with: { (DataSnapshot) in
+                let users = DataSnapshot.value as! [String : Any]
+                if !users.keys.contains(id) {
+                    self.saveUserIDToFirebaseDatabase(id: id)
+                    self.performSegue(withIdentifier: "loginVCToHomescreenVC", sender: self)
+                } else {
+                    self.performSegue(withIdentifier: "loginVCToHomescreenVC", sender: self)
+                }
+            })
         }
     }
     
@@ -52,7 +61,7 @@ class LogInViewController: UIViewController {
         let fundraisers = ""
         let profilePicture = ""
         let myRef = Database.database().reference().child("users/\(id)")
-        let newValue = ["id" : id, "fundraisers" : fundraisers, "profilePicture" : profilePicture] as [String: Any]
+        let newValue = ["id" : id, "fundraisers" : fundraisers, "profilePicture" : profilePicture, "name" : "Anonymous"] as [String: Any]
         myRef.setValue(newValue) { (error, ref) in
             if error != nil {
                 print(error?.localizedDescription ?? "Failed to update value")
