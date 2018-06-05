@@ -32,20 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Configure Twitter Kit
         TWTRTwitter.sharedInstance().start(withConsumerKey:"7xZ3AIxhK4HEal0SArWbKjvRi", consumerSecret: "l6tDYWs2D3yfMkVp0hf9DXivU6mtcFM6i25sHTmbHSNIJagUUa")
-    
-        var keywords = ["president", "this", "Nuclear"]
-        getUserTweetTexts () {
-            for tweet in postArray {
-                let results = searchTextForKeywords(text: tweet, keywords: keywords)
-                print("--------------------------------------------------")
-                print(tweet)
-                print("\n")
-                for i in 0 ..< keywords.count {
-                    print(String(keywords[i]) + ": " + String(results[i]))
-                }
-            }
-        }
-        
         return true
     }
 

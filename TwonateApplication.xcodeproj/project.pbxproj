@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		16CC8EFD20695A3F00D0D1DC /* TwitterFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CC8EFC20695A3F00D0D1DC /* TwitterFunctions.swift */; };
 		16CC8F01206ACDEF00D0D1DC /* AppDelegate-TwitterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CC8F00206ACDEF00D0D1DC /* AppDelegate-TwitterAPI.m */; };
+		16FB703F20BE32700082FD90 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB703E20BE32700082FD90 /* LeaderboardViewController.swift */; };
+		16FB704120BE34070082FD90 /* LeaderBoardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB704020BE34070082FD90 /* LeaderBoardTableViewController.swift */; };
+		16FB704320BE34600082FD90 /* LeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB704220BE34600082FD90 /* LeaderboardTableViewCell.swift */; };
+		16FB704520BE35530082FD90 /* RealLeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB704420BE35530082FD90 /* RealLeaderboardTableViewCell.swift */; };
 		16FC3A812033904A00992FB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A802033904A00992FB3 /* AppDelegate.swift */; };
 		16FC3A862033904A00992FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FC3A842033904A00992FB3 /* Main.storyboard */; };
 		16FC3A892033904A00992FB3 /* TwonateApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16FC3A872033904A00992FB3 /* TwonateApplication.xcdatamodeld */; };
@@ -23,7 +27,6 @@
 		53B3604120A898BA005DFAFC /* Fundraiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3604020A898BA005DFAFC /* Fundraiser.swift */; };
 		53B3604320A89931005DFAFC /* FundraiserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3604220A89931005DFAFC /* FundraiserCollectionViewCell.swift */; };
 		53FDC60620BDDE0000B3E3FD /* FundraiserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDC60520BDDE0000B3E3FD /* FundraiserDetailViewController.swift */; };
-		53FDC60820BDE03600B3E3FD /* LeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDC60720BDE03600B3E3FD /* LeaderboardTableViewCell.swift */; };
 		53FDC60A20BDE06600B3E3FD /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDC60920BDE06600B3E3FD /* Leaderboard.swift */; };
 		53FDC60C20BE003D00B3E3FD /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDC60B20BE003D00B3E3FD /* UserProfileViewController.swift */; };
 		E2F1425FB6E21CBD7ADA123C /* Pods_TwonateApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52A143E9BBA7696C10AE0EC /* Pods_TwonateApplication.framework */; };
@@ -50,6 +53,10 @@
 		16CC8EFC20695A3F00D0D1DC /* TwitterFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterFunctions.swift; sourceTree = "<group>"; };
 		16CC8EFF206ACDEF00D0D1DC /* TwonateApplication-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwonateApplication-Bridging-Header.h"; sourceTree = "<group>"; };
 		16CC8F00206ACDEF00D0D1DC /* AppDelegate-TwitterAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate-TwitterAPI.m"; sourceTree = "<group>"; };
+		16FB703E20BE32700082FD90 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		16FB704020BE34070082FD90 /* LeaderBoardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardTableViewController.swift; sourceTree = "<group>"; };
+		16FB704220BE34600082FD90 /* LeaderboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCell.swift; sourceTree = "<group>"; };
+		16FB704420BE35530082FD90 /* RealLeaderboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealLeaderboardTableViewCell.swift; sourceTree = "<group>"; };
 		16FC3A7D2033904A00992FB3 /* TwonateApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwonateApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FC3A802033904A00992FB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FC3A852033904A00992FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,7 +77,6 @@
 		53B3604020A898BA005DFAFC /* Fundraiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fundraiser.swift; sourceTree = "<group>"; };
 		53B3604220A89931005DFAFC /* FundraiserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserCollectionViewCell.swift; sourceTree = "<group>"; };
 		53FDC60520BDDE0000B3E3FD /* FundraiserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserDetailViewController.swift; sourceTree = "<group>"; };
-		53FDC60720BDE03600B3E3FD /* LeaderboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCell.swift; sourceTree = "<group>"; };
 		53FDC60920BDE06600B3E3FD /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
 		53FDC60B20BE003D00B3E3FD /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		BDC64D65C53D7FD6ED3BC7AC /* Pods-TwonateApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwonateApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwonateApplication/Pods-TwonateApplication.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,13 +149,16 @@
 				53069EBD2097754400534074 /* FundraisersViewController.swift */,
 				53B3604220A89931005DFAFC /* FundraiserCollectionViewCell.swift */,
 				53FDC60520BDDE0000B3E3FD /* FundraiserDetailViewController.swift */,
-				53FDC60720BDE03600B3E3FD /* LeaderboardTableViewCell.swift */,
 				532166E520AB7D5A008D1803 /* CreateFundraiserViewController.swift */,
 				53FDC60B20BE003D00B3E3FD /* UserProfileViewController.swift */,
 				53FDC60920BDE06600B3E3FD /* Leaderboard.swift */,
 				53B3604020A898BA005DFAFC /* Fundraiser.swift */,
 				16CC8EFC20695A3F00D0D1DC /* TwitterFunctions.swift */,
 				16FC3A842033904A00992FB3 /* Main.storyboard */,
+				16FB704220BE34600082FD90 /* LeaderboardTableViewCell.swift */,
+				16FB704420BE35530082FD90 /* RealLeaderboardTableViewCell.swift */,
+				16FB703E20BE32700082FD90 /* LeaderboardViewController.swift */,
+				16FB704020BE34070082FD90 /* LeaderBoardTableViewController.swift */,
 				16FC3A8A2033904A00992FB3 /* Assets.xcassets */,
 				16FC3A8C2033904A00992FB3 /* LaunchScreen.storyboard */,
 				16CC8F00206ACDEF00D0D1DC /* AppDelegate-TwitterAPI.m */,
@@ -399,17 +408,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FB703F20BE32700082FD90 /* LeaderboardViewController.swift in Sources */,
 				16CC8F01206ACDEF00D0D1DC /* AppDelegate-TwitterAPI.m in Sources */,
 				53FDC60A20BDE06600B3E3FD /* Leaderboard.swift in Sources */,
 				532166E620AB7D5A008D1803 /* CreateFundraiserViewController.swift in Sources */,
 				53FDC60620BDDE0000B3E3FD /* FundraiserDetailViewController.swift in Sources */,
 				16FDA683207288210026EFA3 /* LogInViewController.swift in Sources */,
-				53FDC60820BDE03600B3E3FD /* LeaderboardTableViewCell.swift in Sources */,
+				16FB704320BE34600082FD90 /* LeaderboardTableViewCell.swift in Sources */,
 				16CC8EFD20695A3F00D0D1DC /* TwitterFunctions.swift in Sources */,
 				53B3604320A89931005DFAFC /* FundraiserCollectionViewCell.swift in Sources */,
+				16FB704120BE34070082FD90 /* LeaderBoardTableViewController.swift in Sources */,
 				53FDC60C20BE003D00B3E3FD /* UserProfileViewController.swift in Sources */,
 				16FC3A892033904A00992FB3 /* TwonateApplication.xcdatamodeld in Sources */,
 				53069EBE2097754400534074 /* FundraisersViewController.swift in Sources */,
+				16FB704520BE35530082FD90 /* RealLeaderboardTableViewCell.swift in Sources */,
 				53B3604120A898BA005DFAFC /* Fundraiser.swift in Sources */,
 				16FC3A812033904A00992FB3 /* AppDelegate.swift in Sources */,
 			);
@@ -580,7 +592,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L78B26PEZ6;
 				INFOPLIST_FILE = TwonateApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BarnettDevComp.TwonateApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -598,7 +612,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L78B26PEZ6;
 				INFOPLIST_FILE = TwonateApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BarnettDevComp.TwonateApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";

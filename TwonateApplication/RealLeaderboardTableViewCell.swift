@@ -1,5 +1,5 @@
 //
-//  LeaderboardTableViewCell.swift
+//  RealLeaderboardTableViewCell.swift
 //  TwonateApplication
 //
 //  Created by Gannon Barnett on 5/29/18.
@@ -8,11 +8,13 @@
 
 import UIKit
 
-class LeaderboardTableViewCell: UITableViewCell {
+class RealLeaderboardTableViewCell: UITableViewCell {
 
-    @IBOutlet var totalDonatedAmount: UILabel!
-    @IBOutlet var username: UILabel!
     @IBOutlet var position: UILabel!
+    @IBOutlet var donation: UILabel!
+    @IBOutlet var name: UILabel!
+    @IBOutlet var fundraiserImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,7 +22,6 @@ class LeaderboardTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
 

@@ -11,6 +11,9 @@ import Firebase
 
 class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet var createActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet var createButton: UIButton!
+    
     var fundraiserName = ""
     var fundraiserTargetTwitterHandle = ""
     var fundraiserKeywords = [String]()
@@ -31,6 +34,7 @@ class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UII
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CreateFundraiserViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
+        createActivityIndicator.isHidden = true
     }
     
     // Create a new fundraiser object on Firebase Database
@@ -40,6 +44,9 @@ class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UII
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         } else {
+            createActivityIndicator.isHidden = false
+            createActivityIndicator.startAnimating()
+            createButton.isEnabled = false
             createFundraiser(name: self.fundraiserName, targetHandle: self.fundraiserTargetTwitterHandle, keywords: self.fundraiserKeywords, bid: self.fundraiserBid, goal: self.fundraiserGoal, image: self.fundraiserImage) {
                 self.dismiss(animated: true, completion: nil)
             }
@@ -95,6 +102,8 @@ class CreateFundraiserViewController: UIViewController, UITextFieldDelegate, UII
                                 }
                                 completion()
                             }
+                            
+                             Database.database().reference().child("fundraisers/\(randomID)/totalRaised").setValue(0)
                         }
                     }
                 }

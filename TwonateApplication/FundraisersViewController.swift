@@ -104,6 +104,10 @@ class FundraisersViewController: UIViewController, UICollectionViewDelegate, UIC
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // Check to see if the user already is part of this fundraiser
+        
+        self.fundraiserDetailVCName = self.fundraisers[indexPath.row].name
+        self.performSegue(withIdentifier: "fundraisersVCToFundraiserDetailVCSegue", sender: self)
+        /**
         let ref5 = Database.database().reference().ref.child("users/\(Auth.auth().currentUser!.uid)/fundraisers")
         ref5.observeSingleEvent(of: .value) { (DataSnapshot) in
             let currentFundraisers2 = DataSnapshot.value as! String
@@ -150,6 +154,10 @@ class FundraisersViewController: UIViewController, UICollectionViewDelegate, UIC
                             }
                             var joiningKeywords = [String]()
                             var usersPerKeyword = [Int]()
+                            
+                            //add to user statistcs
+                            Database.database().reference().ref.child("fundraisers/\(joiningFundraiserID)/user_statistics").child(Auth.auth().currentUser!.uid).setValue(0)
+                            
                             let ref3 = Database.database().reference().ref.child("fundraisers/\(joiningFundraiserID)/keywords")
                             ref3.observeSingleEvent(of: .value, with: { (DataSnapshot) in
                                 let keywords = (DataSnapshot.value!) as! [String : Any]
@@ -172,7 +180,7 @@ class FundraisersViewController: UIViewController, UICollectionViewDelegate, UIC
                 alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
-        }
+        }**/
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
